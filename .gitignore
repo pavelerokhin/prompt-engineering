@@ -1,0 +1,10 @@
+OPENAI_API_KEY
+
+.idea
+.vscode
+.DS_Store
+
+venv
+
+# PyCharm files
+*.iml
