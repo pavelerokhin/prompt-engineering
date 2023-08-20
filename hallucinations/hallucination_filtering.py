@@ -1,7 +1,7 @@
 from langchain.llms import OpenAI
 from langchain import PromptTemplate
 
-with open("OPENAI_API_KEY", "r") as f:
+with open("../OPENAI_API_KEY", "r") as f:
     key = f.read()
 if not key:
     raise ValueError("Please add your OpenAI API key to the file OPENAI_API_KEY")
