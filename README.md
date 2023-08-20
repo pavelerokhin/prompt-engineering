@@ -4,3 +4,6 @@ LLM prompt engineering repo
 (https://www.pinecone.
 io/learn/series/langchain/langchain-prompt-templates/)
 on `langchain` prompt eng
+
+https://amatriain.net/blog/PromptEngineering
+
