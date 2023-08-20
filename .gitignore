@@ -8,3 +8,5 @@ venv
 
 # PyCharm files
 *.iml
+
+__pycache__/
