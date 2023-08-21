@@ -10,3 +10,9 @@ openai = OpenAI(
     model_name="gpt-3.5-turbo",
     openai_api_key=key
 )
+
+# initialize the models
+davinci = OpenAI(
+    model_name="text-davinci-002",
+    openai_api_key=key
+)
