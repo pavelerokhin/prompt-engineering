@@ -16,27 +16,34 @@ When you reply, first find exact quotes in the FAQ relevant to the user's questi
 pt_verbose2 = PromptTemplate(
     input_variables=["query"],
     template="""Answer the question.
-use this format:
-Q: {query} A: Let’s think step by step. Therefore, the answer is .""")
+{query}
+Let’s write word by word and think step by step until we arrive to an answer.
+All the steps of the reasoning should be written inside <thinking></thinking> XML tags. Format the thoughts a short clear statements.
+While writing, you can use the FAQ to find relevant quotes.  Write them down word for word inside <thinking></thinking> XML tags.
+While writing, you can use information from <thinking></thinking>.
+Put the answer inside <answer></answer> XML tags.
+Therefore:""")
 
 question = "I have 4 apples and I give you two of my apples. After this I buy one apple and eat it. How many apples do I have left?"
 
-print("openai silent")
-print(openai(pt.format(query=question)))
-print("*"*80)
-print("openai verbose")
-print(davinci(pt_verbose.format(query=question)))
-print("*"*80)
+# print("openai silent")
+# print(openai(pt.format(query=question)))
+# print("*"*80)
+# print("openai verbose")
+# print(davinci(pt_verbose.format(query=question)))
+# print("*"*80)
 print("openai verbose 2")
+print("question:", question)
 print(openai(pt_verbose2.format(query=question)))
 print("*"*80)
 davinci.temperature = 1
-print("davinci silent")
-print(davinci(pt.format(query=question)))
-print("*"*80)
-print("davinci verbose")
-print(davinci(pt_verbose.format(query=question)))
-print("*"*80)
+# print("davinci silent")
+# print(davinci(pt.format(query=question)))
+# print("*"*80)
+# print("davinci verbose")
+# print(davinci(pt_verbose.format(query=question)))
+# print("*"*80)
 print("davinci verbose 2")
+print("question:", question)
 print(davinci(pt_verbose2.format(query=question)))
 print("*"*80)
