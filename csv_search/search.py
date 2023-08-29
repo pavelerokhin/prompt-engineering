@@ -25,12 +25,10 @@ Qual è numero di dataset relativo alla domanda:
 
 data_prompt = """
 Dataset {i}
-Le metadata del CSV sono:
+Le metadata sono:
 {metadata}
-Il HEADER del CSV è:
+Le categorie sono:
 {csv_header}
-***
-
 """
 
 file_names = ["82_20230706_eg_incarichi",
