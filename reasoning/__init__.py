@@ -12,7 +12,23 @@ openai = OpenAI(
 )
 
 # initialize the models
-davinci = OpenAI(
+davinci1 = OpenAI(
     model_name="text-davinci-002",
     openai_api_key=key
 )
+davinci1.temperature = 1
+
+# initialize the models
+davinci05 = OpenAI(
+    model_name="text-davinci-002",
+    openai_api_key=key
+)
+davinci05.temperature = 0.5
+
+# initialize the models
+davinci01 = OpenAI(
+    model_name="text-davinci-002",
+    openai_api_key=key
+)
+davinci01.temperature = 0.1
+

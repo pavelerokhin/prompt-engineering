@@ -1,5 +1,5 @@
 from langchain import PromptTemplate
-from text_generation import openai, davinci
+from reasoning import openai, davinci1
 
 pt = PromptTemplate(
     input_variables=["query"],
@@ -26,24 +26,27 @@ Therefore:""")
 
 question = "I have 4 apples and I give you two of my apples. After this I buy one apple and eat it. How many apples do I have left?"
 
-# print("openai silent")
-# print(openai(pt.format(query=question)))
-# print("*"*80)
-# print("openai verbose")
-# print(davinci(pt_verbose.format(query=question)))
-# print("*"*80)
+print("openai silent")
+print("question:", question)
+print(openai(pt.format(query=question)))
+print("*"*80)
+print("openai verbose")
+print("question:", question)
+print(davinci1(pt_verbose.format(query=question)))
+print("*"*80)
 print("openai verbose 2")
 print("question:", question)
 print(openai(pt_verbose2.format(query=question)))
 print("*"*80)
-davinci.temperature = 1
-# print("davinci silent")
-# print(davinci(pt.format(query=question)))
-# print("*"*80)
-# print("davinci verbose")
-# print(davinci(pt_verbose.format(query=question)))
-# print("*"*80)
+print("davinci silent")
+print("question:", question)
+print(davinci1(pt.format(query=question)))
+print("*"*80)
+print("davinci verbose")
+print("question:", question)
+print(davinci1(pt_verbose.format(query=question)))
+print("*"*80)
 print("davinci verbose 2")
 print("question:", question)
-print(davinci(pt_verbose2.format(query=question)))
+print(davinci1(pt_verbose2.format(query=question)))
 print("*"*80)
