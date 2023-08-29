@@ -64,28 +64,24 @@ def prepare_prompt_context(file_names: list):
 
 
 if __name__ == '__main__':
-    # alpha = 150  # 1/alpha of files will be used for the prompt
+    alpha = 150  # 1/alpha of files will be used for the prompt
 
-    # part_of_files = []
-    #
-    # # number of files in dir ./output
-    # n = len(os.listdir('./output'))
-    #
-    # for i, file in enumerate(os.listdir('./output')):
-    #     if i >= n / alpha:
-    #         break
-    #
-    #     full_name = file.split('.')
-    #     name = full_name[0]
-    #     ext = full_name[-1]
-    #     if ext == 'csv':
-    #         part_of_files.append(name)
-    #
-    # if "4701_20230508_eg_concorsi" in part_of_files:
-    #     file_names = part_of_files
-    # else:
-    #     part_of_files.remove(part_of_files[0])
-    #     file_names = part_of_files + ["4701_20230508_eg_concorsi"]
+    part_of_files = []
+
+    # number of files in dir ./output
+    n = len(os.listdir('./output'))
+
+    for i, file in enumerate(os.listdir('./output')):
+        if i >= n / alpha:
+            break
+
+        full_name = file.split('.')
+        name = full_name[0]
+        ext = full_name[-1]
+        if ext == 'csv':
+            part_of_files.append(name)
+
+
 
     # make list of files random order
     random.shuffle(file_names)
