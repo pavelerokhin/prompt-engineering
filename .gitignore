@@ -4,6 +4,8 @@ OPENAI_API_KEY
 .vscode
 .DS_Store
 
+article
+output
 venv
 
 # PyCharm files
