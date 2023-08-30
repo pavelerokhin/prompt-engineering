@@ -1,0 +1,66 @@
+2023-08-30 16:05:45 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 16:09:13 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 16:10:58 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 16:10:58 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 16:10:58 [INFO] Prompt ID: 21ebbce9-da20-463f-b7a6-4880705e5fda
+2023-08-30 16:11:13 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get the relevant rows
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains("MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE", case=False)]
+
+    if len(filtered_df) > 0:
+        result = {
+            "type": "text",
+            "value": "Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+    else:
+        result = {
+            "type": "text",
+            "value": "No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 16:11:13 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE', case=False)]
+    if len(filtered_df) > 0:
+        result = {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        result = {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 16:11:13 [INFO] Answer: {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 16:11:13 [INFO] Executed in: 15.429065942764282s
+2023-08-30 16:29:37 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 16:29:37 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 16:29:37 [INFO] Prompt ID: 3fcf6868-a0d6-4689-8f9c-a73f6ebbb0b2
+2023-08-30 16:39:38 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 16:39:38 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 16:39:38 [INFO] Prompt ID: 95adfbd7-bdc0-4040-8dba-221cc82a00a3
+2023-08-30 17:07:00 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:07:00 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 17:07:00 [INFO] Prompt ID: 88cfae4f-b6b6-465c-a943-6174f97df094

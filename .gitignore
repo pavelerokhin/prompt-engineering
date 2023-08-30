@@ -3,7 +3,9 @@ OPENAI_API_KEY
 .idea
 .vscode
 .DS_Store
+.log
 
+__pycache__
 article
 output
 venv

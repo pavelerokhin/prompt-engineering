@@ -1,20 +1,10 @@
-import json
-import os
-import random
-
 from csv_search import openai, davinci1, davinci05, davinci01
-from search import prepare_prompt_context
+from search import prepare_prompt
+from utils import get_file_names
 
 # prepare prompt, we inject a list of metadata into the prompt as context
 # we inject headers of the corresponding csv files (with same name)
 # we inject the first line of the corresponding csv files (with same name)
-
-
-def get_file_header(file):
-    with open(file, 'r') as f:
-        return f.readline()
-
-
 base = """Questi sono le informazioni che abbiamo sul dataset:
 {data}
 ***
@@ -32,22 +22,16 @@ Le categorie sono:
 {csv_header}
 """
 
-N = 4
-
-file_names = os.listdir('./output')
-file_names = list(set([file.split('.')[0] for file in file_names]))
-random.shuffle(file_names)
-file_names = file_names[:N]
-if "4701_20230508_eg_concorsi" not in file_names:
-    file_names.remove(file_names[0])
-    file_names = file_names + ["4701_20230508_eg_concorsi"]
-    random.shuffle(file_names)
+N = 40
+n = 4
 
 
 if __name__ == '__main__':
-    correct_response = file_names.index("4701_20230508_eg_concorsi")
+    file_names = get_file_names(N)
+
     # prepare prompt
-    prompt = prepare_prompt_context(file_names)
+    prompt = prepare_prompt(file_names)
+    correct_response = file_names.index("4701_20230508_eg_concorsi")
 
     # ask question
     question = "Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?"
