@@ -64,3 +64,1414 @@ result = analyze_data(dfs)
 2023-08-30 17:07:00 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
 2023-08-30 17:07:00 [INFO] Running PandasAI with langchain_openai-chat LLM...
 2023-08-30 17:07:00 [INFO] Prompt ID: 88cfae4f-b6b6-465c-a943-6174f97df094
+2023-08-30 17:42:21 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:42:21 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:42:21 [INFO] Prompt ID: 6e10b206-4bca-4f44-adde-a7bb30a7bc81
+2023-08-30 17:42:21 [INFO] Using cached response
+2023-08-30 17:42:21 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get the relevant rows
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains("MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE", case=False)]
+
+    if len(filtered_df) > 0:
+        result = {
+            "type": "text",
+            "value": "Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+    else:
+        result = {
+            "type": "text",
+            "value": "No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 17:42:21 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE', case=False)]
+    if len(filtered_df) > 0:
+        result = {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        result = {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:42:21 [INFO] Answer: {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 17:42:21 [INFO] Executed in: 0.006723880767822266s
+2023-08-30 17:42:31 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:42:31 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:42:31 [INFO] Prompt ID: e52d7443-4bf5-4fc2-9c23-7ced2bb3d091
+2023-08-30 17:42:31 [INFO] Using cached response
+2023-08-30 17:42:31 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get the relevant rows
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains("MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE", case=False)]
+
+    if len(filtered_df) > 0:
+        result = {
+            "type": "text",
+            "value": "Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+    else:
+        result = {
+            "type": "text",
+            "value": "No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 17:42:31 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE', case=False)]
+    if len(filtered_df) > 0:
+        result = {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        result = {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:42:31 [INFO] Answer: {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 17:42:31 [INFO] Executed in: 0.003439188003540039s
+2023-08-30 17:42:45 [INFO] Question: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:42:45 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:42:45 [INFO] Prompt ID: a95d817e-84b0-4293-b902-3473051346c6
+2023-08-30 17:42:45 [INFO] Using cached response
+2023-08-30 17:42:45 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe to get the relevant rows
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains("MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE", case=False)]
+
+    if len(filtered_df) > 0:
+        result = {
+            "type": "text",
+            "value": "Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+    else:
+        result = {
+            "type": "text",
+            "value": "No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."
+        }
+
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 17:42:45 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE', case=False)]
+    if len(filtered_df) > 0:
+        result = {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        result = {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:42:45 [INFO] Answer: {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 17:42:45 [INFO] Executed in: 0.007042884826660156s
+2023-08-30 17:49:32 [INFO] Question: Oggi è 30/08/23. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:49:32 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:49:32 [INFO] Prompt ID: 019ac7fc-71fa-444b-b7c0-6adbcf5181f8
+2023-08-30 17:49:57 [INFO] Question: Oggi è 30/08/23. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:49:57 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:49:57 [INFO] Prompt ID: 4037e545-656b-41a2-9b25-3d3ac6e82544
+2023-08-30 17:50:54 [INFO] Question: Oggi è 30/08/23. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:50:54 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 17:50:54 [INFO] Prompt ID: f6c88ed2-60d1-49df-b5a8-a618f50f4ee3
+2023-08-30 17:51:14 [INFO] Question: Oggi è 30/08/23. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:51:14 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 17:51:14 [INFO] Prompt ID: 36e8bbee-4394-4feb-a5ea-343447f6f593
+2023-08-30 17:51:31 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+   # Code goes here (do not add comments)
+   current_date = pd.to_datetime("today").date()
+   open_concorsi = []
+   for df in dfs:
+       if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+           df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y').dt.date
+           df['OGGETTO'] = df['OGGETTO'].str.lower()
+           concorsi_aperti = df[(df['OGGETTO'].str.contains('operaio')) & (df['OGGETTO'].str.contains('mautentore')) & (df['OGGETTO'].str.contains('macchine operatrici complesse')) & (df['DATA_SCADENZA'] >= current_date)]
+           open_concorsi.extend(concorsi_aperti['OGGETTO'].tolist())
+   
+   if len(open_concorsi) > 0:
+       return {"type": "text", "value": "Sì, ci sono ancora dei concorsi aperti per operaio manutentore di macchine operatrici complesse."}
+   else:
+       return {"type": "text", "value": "No, non ci sono concorsi aperti per operaio manutentore di macchine operatrici complesse."}
+    
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 17:51:31 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    current_date = pd.to_datetime('today').date()
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y').dt.date
+            df['OGGETTO'] = df['OGGETTO'].str.lower()
+            concorsi_aperti = df[df['OGGETTO'].str.contains('operaio') & df['OGGETTO'].str.contains('mautentore') & df['OGGETTO'].str.contains('macchine operatrici complesse') & (df['DATA_SCADENZA'] >= current_date)]
+            open_concorsi.extend(concorsi_aperti['OGGETTO'].tolist())
+    if len(open_concorsi) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:51:31 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 17:51:31 [INFO] Failed with error: time data '2014-06-20' does not match format '%d/%m/%Y' (match). Retrying
+2023-08-30 17:51:51 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    current_date = pd.to_datetime('today').date()
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], errors='coerce', format='%d/%m/%Y').dt.date
+            df['OGGETTO'] = df['OGGETTO'].str.lower()
+            concorsi_aperti = df[df['OGGETTO'].str.contains('operaio') & df['OGGETTO'].str.contains('mautentore') & df['OGGETTO'].str.contains('macchine operatrici complesse') & (df['DATA_SCADENZA'] >= current_date)]
+            open_concorsi.extend(concorsi_aperti['OGGETTO'].tolist())
+    if len(open_concorsi) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:51:51 [WARNING] Error of executing code
+2023-08-30 17:51:51 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 17:51:51 [INFO] Failed with error: Invalid comparison between dtype=datetime64[ns] and date. Retrying
+2023-08-30 17:52:09 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    current_date = pd.to_datetime('today').date()
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y').dt.date
+            df['OGGETTO'] = df['OGGETTO'].str.lower()
+            concorsi_aperti = df[df['OGGETTO'].str.contains('operaio') & df['OGGETTO'].str.contains('mautentore') & df['OGGETTO'].str.contains('macchine operatrici complesse') & (df['DATA_SCADENZA'] >= pd.to_datetime(current_date))]
+            open_concorsi.extend(concorsi_aperti['OGGETTO'].tolist())
+    if len(open_concorsi) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono ancora dei concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:52:09 [INFO] Answer: {'type': 'text', 'value': 'No, non ci sono concorsi aperti per operaio manutentore di macchine operatrici complesse.'}
+2023-08-30 17:52:09 [INFO] Executed in: 55.24565410614014s
+2023-08-30 17:52:44 [INFO] Question: Oggi è 01/01/23. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 17:52:44 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 17:52:44 [INFO] Prompt ID: 6be1c73d-4a18-45fb-a77a-3bf87fd7f02f
+2023-08-30 17:53:00 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+   # Filtering the dataframe to get the relevant rows
+   df = dfs[0]
+   today = pd.to_datetime('01/01/23', format='%d/%m/%y')
+   filtered_df = df[df['OGGETTO'].str.contains('operaio', case=False) & df['OGGETTO'].str.contains('macchine operatrici complesse', case=False) & (pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y') > today)]
+
+   # Checking if there are still open positions
+   if len(filtered_df) > 0:
+       return {"type": "text", "value": "Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+   else:
+       return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 17:53:00 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    today = pd.to_datetime('01/01/23', format='%d/%m/%y')
+    filtered_df = df[df['OGGETTO'].str.contains('operaio', case=False) & df['OGGETTO'].str.contains('macchine operatrici complesse', case=False) & (pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y') > today)]
+    if len(filtered_df) > 0:
+        return {'type': 'text', 'value': 'Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 17:53:00 [INFO] Answer: {'type': 'text', 'value': 'Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 17:53:00 [INFO] Executed in: 15.677566289901733s
+2023-08-30 19:13:49 [INFO] Question: Oggi è il 30 agosto 2023. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:13:49 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:13:49 [INFO] Prompt ID: d1bdf86f-2382-4b87-a493-62cea0af09a0
+2023-08-30 19:14:05 [INFO] Question: Oggi è il 30 agosto 2023. Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:14:05 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:14:05 [INFO] Prompt ID: aa724a88-e2b4-4012-9604-ba429b26c476
+2023-08-30 19:14:27 [INFO] Question: Oggi è il 30 agosto 2023. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:14:27 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:14:27 [INFO] Prompt ID: d92fe2f4-4fc7-4e2b-8f84-cf0b0652a29e
+2023-08-30 19:14:46 [INFO] Question: Oggi è il 30 agosto 2023. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:14:46 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:14:46 [INFO] Prompt ID: e6d687c6-6edd-44f2-bba0-4edf6c36ec38
+2023-08-30 19:15:02 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and the job title
+    today = pd.to_datetime("30-08-2023", format="%d-%m-%Y")
+    job_title = "OPERAIO MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE"
+    
+    filtered_df = dfs[0][(dfs[0]["OGGETTO"].str.contains(job_title, case=False)) & (pd.to_datetime(dfs[0]["DATA_SCADENZA"], format="%d/%m/%Y") > today)]
+    
+    # Check if there are any open competitions
+    if filtered_df.empty:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+    
+    # Prepare the output dataframe
+    output_df = filtered_df[["OGGETTO", "DATA_SCADENZA"]].reset_index(drop=True)
+    
+    return {"type": "dataframe", "value": output_df}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:15:02 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = pd.to_datetime('30-08-2023', format='%d-%m-%Y')
+    job_title = 'OPERAIO MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job_title, case=False) & (pd.to_datetime(dfs[0]['DATA_SCADENZA'], format='%d/%m/%Y') > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    output_df = filtered_df[['OGGETTO', 'DATA_SCADENZA']].reset_index(drop=True)
+    return {'type': 'dataframe', 'value': output_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:15:02 [INFO] Answer: {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 19:15:02 [INFO] Executed in: 15.950783967971802s
+2023-08-30 19:15:36 [INFO] Question: Oggi è il 30 agosto 2023. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:15:36 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:15:36 [INFO] Prompt ID: 9a35389d-168c-4a3e-9be5-a97a81d8bab7
+2023-08-30 19:15:36 [INFO] Using cached response
+2023-08-30 19:15:36 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and the job title
+    today = pd.to_datetime("30-08-2023", format="%d-%m-%Y")
+    job_title = "OPERAIO MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE"
+    
+    filtered_df = dfs[0][(dfs[0]["OGGETTO"].str.contains(job_title, case=False)) & (pd.to_datetime(dfs[0]["DATA_SCADENZA"], format="%d/%m/%Y") > today)]
+    
+    # Check if there are any open competitions
+    if filtered_df.empty:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+    
+    # Prepare the output dataframe
+    output_df = filtered_df[["OGGETTO", "DATA_SCADENZA"]].reset_index(drop=True)
+    
+    return {"type": "dataframe", "value": output_df}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:15:36 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = pd.to_datetime('30-08-2023', format='%d-%m-%Y')
+    job_title = 'OPERAIO MAUTENTORE DI MACCHINE OPERATRICI COMPLESSE'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job_title, case=False) & (pd.to_datetime(dfs[0]['DATA_SCADENZA'], format='%d/%m/%Y') > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    output_df = filtered_df[['OGGETTO', 'DATA_SCADENZA']].reset_index(drop=True)
+    return {'type': 'dataframe', 'value': output_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:15:36 [INFO] Answer: {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 19:15:36 [INFO] Executed in: 0.011455059051513672s
+2023-08-30 19:15:56 [INFO] Question: Oggi è il 1 gennaio 2023. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:15:56 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:15:56 [INFO] Prompt ID: 9a3b47da-e3f9-420e-9555-c197094c13b2
+2023-08-30 19:16:36 [INFO] Question: Oggi è il 1 gennaio 2023. I concorsi aperti per operaio mautentore di macchine operatrici?
+2023-08-30 19:16:36 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:16:36 [INFO] Prompt ID: fc4ede3f-3f1f-4daf-9a58-ba881a5ab17a
+2023-08-30 19:16:47 [INFO] Question: Oggi è il 1 gennaio 2023. I concorsi aperti per operaio mautentore di macchine operatrici?
+2023-08-30 19:16:47 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:16:47 [INFO] Prompt ID: c60ad19f-c2e5-4340-aa72-1dd06cb95b0f
+2023-08-30 19:17:03 [INFO] Question: Oggi è il 1 gennaio 2023. I concorsi aperti per operaio mautentore di macchine operatrici?
+2023-08-30 19:17:03 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:17:03 [INFO] Prompt ID: 2606a588-b08e-48be-8780-ee0c7686861f
+2023-08-30 19:17:18 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here (do not add comments)
+
+    # Convert the date columns to datetime format
+    dfs[0]['DATA_SCADENZA'] = pd.to_datetime(dfs[0]['DATA_SCADENZA'], errors='coerce')
+
+    # Filter for "OPERATORE MANUTENTORE" in the "OGGETTO" column
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('OPERATORE MANUTENTORE', case=False, na=False)]
+
+    # Check if there are any open competitions
+    current_date = pd.to_datetime('01/01/2023', format='%d/%m/%Y')
+    open_competitions = filtered_df[filtered_df['DATA_SCADENZA'] >= current_date]
+
+    # Check if there are any open competitions for "OPERATORE MANUTENTORE" of "MACCHINE OPERATRICI"
+    if len(open_competitions) > 0:
+        result = {"type": "text", "value": "Yes, there are open competitions for OPERATORE MANUTENTORE di MACCHINE OPERATRICI."}
+    else:
+        result = {"type": "text", "value": "No, there are no open competitions for OPERATORE MANUTENTORE di MACCHINE OPERATRICI."}
+
+    return result
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:17:18 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    dfs[0]['DATA_SCADENZA'] = pd.to_datetime(dfs[0]['DATA_SCADENZA'], errors='coerce')
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains('OPERATORE MANUTENTORE', case=False, na=False)]
+    current_date = pd.to_datetime('01/01/2023', format='%d/%m/%Y')
+    open_competitions = filtered_df[filtered_df['DATA_SCADENZA'] >= current_date]
+    if len(open_competitions) > 0:
+        result = {'type': 'text', 'value': 'Yes, there are open competitions for OPERATORE MANUTENTORE di MACCHINE OPERATRICI.'}
+    else:
+        result = {'type': 'text', 'value': 'No, there are no open competitions for OPERATORE MANUTENTORE di MACCHINE OPERATRICI.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:17:18 [INFO] Answer: {'type': 'text', 'value': 'No, there are no open competitions for OPERATORE MANUTENTORE di MACCHINE OPERATRICI.'}
+2023-08-30 19:17:18 [INFO] Executed in: 14.78171181678772s
+2023-08-30 19:17:43 [INFO] Question: Oggi è il 1 gennaio 2022. I concorsi aperti per operaio mautentore di macchine operatrici?
+2023-08-30 19:17:43 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:17:43 [INFO] Prompt ID: 4b660e61-8b86-4c53-b142-39e45764e75b
+2023-08-30 19:17:57 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+from datetime import datetime
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here
+    today = datetime.now().strftime("%d/%m/%Y")
+    open_concorsi = []
+
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format="%d/%m/%Y")
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains("operaio mautentore di macchine operatrici", case=False), 'OGGETTO'].tolist())
+
+    if open_concorsi:
+        return {"type": "text", "value": "I concorsi aperti per operaio mautentore di macchine operatrici sono:\n\n{}\n".format("\n".join(open_concorsi))}
+    else:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici."}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:17:57 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False), 'OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:17:57 [WARNING] Error of executing code
+2023-08-30 19:17:57 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:17:57 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:18:05 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list) ->dict:
+    today = datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False), 'OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(df)
+        ```
+2023-08-30 19:18:05 [WARNING] Error of executing code
+2023-08-30 19:18:05 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 19:18:05 [INFO] Failed with error: name 'datetime' is not defined. Retrying
+2023-08-30 19:18:14 [INFO] 
+Code running:
+```
+def analyze_data(dfs):
+    import datetime
+    import pandas as pd
+    today = datetime.datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False), 'OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:18:14 [WARNING] Error of executing code
+2023-08-30 19:39:01 [INFO] Question: Oggi è il 1 gennaio 2022. I concorsi aperti per operaio mautentore di macchine operatrici?
+2023-08-30 19:39:01 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:39:01 [INFO] Prompt ID: fc4a4c2d-5694-4894-86a7-bc4bdf34b541
+2023-08-30 19:39:01 [INFO] Using cached response
+2023-08-30 19:39:01 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+from datetime import datetime
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Code goes here
+    today = datetime.now().strftime("%d/%m/%Y")
+    open_concorsi = []
+
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format="%d/%m/%Y")
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains("operaio mautentore di macchine operatrici", case=False), 'OGGETTO'].tolist())
+
+    if open_concorsi:
+        return {"type": "text", "value": "I concorsi aperti per operaio mautentore di macchine operatrici sono:\n\n{}\n".format("\n".join(open_concorsi))}
+    else:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici."}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:39:01 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False), 'OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:39:01 [WARNING] Error of executing code
+2023-08-30 19:39:01 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:39:01 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:39:15 [INFO] 
+Code running:
+```
+def analyze_data(dfs):
+    today = datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[(df['DATA_SCADENZA'] >= pd.to_datetime(today)) & df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False)]['OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:39:15 [WARNING] Error of executing code
+2023-08-30 19:39:15 [WARNING] Error of executing code
+2023-08-30 19:39:15 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 19:39:15 [INFO] Failed with error: module 'datetime' has no attribute 'now'. Retrying
+2023-08-30 19:39:30 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    from datetime import datetime
+    today = datetime.now().strftime('%d/%m/%Y')
+    open_concorsi = []
+    for df in dfs:
+        if 'DATA_SCADENZA' in df.columns and 'OGGETTO' in df.columns:
+            df['DATA_SCADENZA'] = pd.to_datetime(df['DATA_SCADENZA'], format='%d/%m/%Y')
+            open_concorsi.extend(df[df['DATA_SCADENZA'] >= pd.to_datetime(today)].loc[df['OGGETTO'].str.contains('operaio mautentore di macchine operatrici', case=False), 'OGGETTO'].tolist())
+    if open_concorsi:
+        return {'type': 'text', 'value': """I concorsi aperti per operaio mautentore di macchine operatrici sono:
+
+{}
+""".format('\n'.join(open_concorsi))}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:39:30 [WARNING] Error of executing code
+2023-08-30 19:41:48 [INFO] Question: Oggi è il 1 gennaio 2022. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:41:48 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:41:48 [INFO] Prompt ID: 6214adc8-fb52-4031-8acd-86a26cc0ce0c
+2023-08-30 19:42:11 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and job title
+    current_date = pd.to_datetime("1/1/2022", dayfirst=True)
+    job_title = "operaio mautentore di macchine operatrici complesse"
+    filtered_df = dfs[0][(dfs[0]["DATA_SCADENZA"].apply(pd.to_datetime, dayfirst=True) >= current_date) & (dfs[0]["OGGETTO"].str.contains(job_title, case=False))]
+
+    # Check if any open competitions are found
+    if filtered_df.empty:
+        return { "type": "text", "value": "Non ci sono concorsi aperti per {}.".format(job_title) }
+    else:
+        # Prepare the output dataframe
+        output_df = pd.DataFrame({
+            "Comune": filtered_df["BANDITO_DA"],
+            "Data Scadenza": filtered_df["DATA_SCADENZA"],
+            "Data Pubblicazione": filtered_df["DATA_PUBBLICAZIONE"],
+            "Gazzetta Ufficiale": filtered_df["GAZZETTA_UFFICIALE"]
+        })
+        
+        return { "type": "dataframe", "value": output_df }
+    
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:42:11 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    current_date = pd.to_datetime('1/1/2022', dayfirst=True)
+    job_title = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][(dfs[0]['DATA_SCADENZA'].apply(pd.to_datetime, dayfirst=True) >= current_date) & dfs[0]['OGGETTO'].str.contains(job_title, case=False)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per {}.'.format(job_title)}
+    else:
+        output_df = pd.DataFrame({'Comune': filtered_df['BANDITO_DA'], 'Data Scadenza': filtered_df['DATA_SCADENZA'], 'Data Pubblicazione': filtered_df['DATA_PUBBLICAZIONE'], 'Gazzetta Ufficiale': filtered_df['GAZZETTA_UFFICIALE']})
+        return {'type': 'dataframe', 'value': output_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:42:11 [INFO] Answer: {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 19:42:11 [INFO] Executed in: 22.72906804084778s
+2023-08-30 19:43:06 [INFO] Question: Oggi è il 01/01/2022. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:43:06 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:43:06 [INFO] Prompt ID: 8157eb51-c872-4275-b50d-da54144766d8
+2023-08-30 19:43:19 [INFO] 
+                    Code generated:
+                    ```
+                    import pandas as pd
+
+# Analyze the data
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Prepare: Preprocessing and cleaning data if necessary
+    
+    # Create a new DataFrame for concorsi aperti
+    concorsi_aperti = pd.DataFrame(columns=dfs[0].columns)
+    
+    # Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    for df in dfs:
+        # Check if the dataframe contains relevant information about the concorsi
+        if 'AVVISO DI MOBILITA' in df['OGGETTO'].values and 'MACCHINE OPERATRICI' in df['OGGETTO'].values:
+            # Check if the concorso is still open
+            scadenza_dates = pd.to_datetime(df['SCADENZA'], errors='coerce')
+            concorsi_aperti = df[scadenza_dates >= pd.to_datetime('01/01/2022', format='%d/%m/%Y')]
+    
+    # Analyze: Conducting the actual analysis
+    
+    # Check if there are any concorsi aperti
+    if not concorsi_aperti.empty:
+        # Output: return a dictionary of the concorsi aperti dataframe
+        return {"type": "dataframe", "value": concorsi_aperti}
+    else:
+        # Output: return a dictionary indicating no concorsi aperti
+        return {"type": "text", "value": "Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:43:19 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    concorsi_aperti = pd.DataFrame(columns=dfs[0].columns)
+    for df in dfs:
+        if 'AVVISO DI MOBILITA' in df['OGGETTO'].values and 'MACCHINE OPERATRICI' in df['OGGETTO'].values:
+            scadenza_dates = pd.to_datetime(df['SCADENZA'], errors='coerce')
+            concorsi_aperti = df[scadenza_dates >= pd.to_datetime('01/01/2022', format='%d/%m/%Y')]
+    if not concorsi_aperti.empty:
+        return {'type': 'dataframe', 'value': concorsi_aperti}
+    else:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:43:19 [INFO] Answer: {'type': 'text', 'value': 'Non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 19:43:19 [INFO] Executed in: 12.410415649414062s
+2023-08-30 19:43:58 [INFO] Question: Oggi è il 01/01/2023. I concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:43:58 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:43:58 [INFO] Prompt ID: 0ec7bdfa-c6d7-46c6-9ba3-ada8175a3779
+2023-08-30 19:44:08 [INFO] 
+                    Code generated:
+                    ```
+                    import pandas as pd
+from datetime import datetime
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Prepare
+    # Combine all dataframes into one
+    df_combined = pd.concat(dfs)
+    
+    # Process
+    # Convert date columns to datetime format
+    df_combined['DATA_SCADENZA'] = pd.to_datetime(df_combined['DATA_SCADENZA'], format='%d/%m/%Y')
+    df_combined['DATA_PUBBLICAZIONE'] = pd.to_datetime(df_combined['DATA_PUBBLICAZIONE'], format='%d/%m/%Y')
+    df_combined['GAZZETTA_UFFICIALE'] = pd.to_datetime(df_combined['GAZZETTA_UFFICIALE'], format='n.d.')
+    
+    # Filter by job and open applications
+    current_date = datetime.now().date()
+    df_filtered = df_combined[(df_combined['OGGETTO'].str.contains('MAUTENTORE')) & (df_combined['DATA_SCADENZA'] >= current_date) & (df_combined['NUMERO_POSTI'] > 0)]
+    
+    # Analyze
+    if len(df_filtered) > 0:
+        return {"type": "text", "value": "Sì, ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+    else:
+        return {"type": "text", "value": "No, al momento non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse."}
+
+result = analyze_data(dfs)
+print(result)
+                    ```
+                
+2023-08-30 19:44:08 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df_combined = pd.concat(dfs)
+    df_combined['DATA_SCADENZA'] = pd.to_datetime(df_combined['DATA_SCADENZA'], format='%d/%m/%Y')
+    df_combined['DATA_PUBBLICAZIONE'] = pd.to_datetime(df_combined['DATA_PUBBLICAZIONE'], format='%d/%m/%Y')
+    df_combined['GAZZETTA_UFFICIALE'] = pd.to_datetime(df_combined['GAZZETTA_UFFICIALE'], format='n.d.')
+    current_date = datetime.now().date()
+    df_filtered = df_combined[df_combined['OGGETTO'].str.contains('MAUTENTORE') & (df_combined['DATA_SCADENZA'] >= current_date) & (df_combined['NUMERO_POSTI'] > 0)]
+    if len(df_filtered) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, al momento non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+print(result)
+        ```
+2023-08-30 19:44:08 [WARNING] Error of executing code
+2023-08-30 19:44:08 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:44:08 [INFO] Failed with error: time data '4^ SERIE SPECIALE - CONCORSI ED ESAMI n. 85 del 7/11/2017 (COD. 17E08341)' does not match format 'n.d.' (match). Retrying
+2023-08-30 19:44:19 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df_combined = pd.concat(dfs)
+    df_combined['DATA_SCADENZA'] = pd.to_datetime(df_combined['DATA_SCADENZA'], format='%d/%m/%Y')
+    df_combined['DATA_PUBBLICAZIONE'] = pd.to_datetime(df_combined['DATA_PUBBLICAZIONE'], format='%d/%m/%Y')
+    df_combined['GAZZETTA_UFFICIALE'].replace('n.d.', pd.NaT, inplace=True)
+    df_combined['GAZZETTA_UFFICIALE'] = pd.to_datetime(df_combined['GAZZETTA_UFFICIALE'])
+    current_date = datetime.now().date()
+    df_filtered = df_combined[df_combined['OGGETTO'].str.contains('MAUTENTORE') & (df_combined['DATA_SCADENZA'] >= current_date) & (df_combined['NUMERO_POSTI'] > 0)]
+    if len(df_filtered) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, al momento non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+print(result)
+        ```
+2023-08-30 19:44:19 [WARNING] Error of executing code
+2023-08-30 19:44:19 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 19:44:19 [INFO] Failed with error: Unknown string format: 4^ SERIE SPECIALE - CONCORSI ED ESAMI n. 85 del 7/11/2017 (COD. 17E08341) present at position 12. Retrying
+2023-08-30 19:44:30 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df_combined = pd.concat(dfs)
+    df_combined['DATA_SCADENZA'] = pd.to_datetime(df_combined['DATA_SCADENZA'], format='%d/%m/%Y')
+    df_combined['DATA_PUBBLICAZIONE'] = pd.to_datetime(df_combined['DATA_PUBBLICAZIONE'], format='%d/%m/%Y')
+
+    def get_gazzetta_ufficiale_date(date_string):
+        try:
+            return pd.to_datetime(date_string, format='n.d.')
+        except ValueError:
+            return pd.NaT
+    df_combined['GAZZETTA_UFFICIALE'] = df_combined['GAZZETTA_UFFICIALE'].apply(get_gazzetta_ufficiale_date)
+    current_date = datetime.now().date()
+    df_filtered = df_combined[df_combined['OGGETTO'].str.contains('MAUTENTORE') & (df_combined['DATA_SCADENZA'] >= current_date) & (df_combined['NUMERO_POSTI'] > 0)]
+    if len(df_filtered) > 0:
+        return {'type': 'text', 'value': 'Sì, ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+    else:
+        return {'type': 'text', 'value': 'No, al momento non ci sono concorsi aperti per operaio mautentore di macchine operatrici complesse.'}
+
+
+result = analyze_data(dfs)
+print(result)
+        ```
+2023-08-30 19:44:30 [WARNING] Error of executing code
+2023-08-30 19:44:58 [INFO] Question: Oggi è il 01/01/2023. I concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:44:58 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:44:58 [INFO] Prompt ID: da419aa3-2abe-486d-8734-2ac7a27bef5a
+2023-08-30 19:45:11 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+from datetime import datetime
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and the specified job
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = "operaio mautentore di macchine operatrici complesse"
+    filtered_df = dfs[0][(dfs[0]['OGGETTO'].str.contains(job, case=False)) & (dfs[0]['DATA_SCADENZA'] > today)]
+    
+    # Check if any results are found
+    if filtered_df.empty:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per "+job+" oggi."}
+    else:
+        return {"type": "dataframe", "value": filtered_df}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:45:11 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:45:11 [WARNING] Error of executing code
+2023-08-30 19:45:11 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:45:11 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:45:25 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+
+
+dfs = [df]
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:45:25 [WARNING] Error of executing code
+2023-08-30 19:45:25 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 19:45:25 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:45:38 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+
+
+df_list = [df]
+result = analyze_data(df_list)
+        ```
+2023-08-30 19:45:38 [WARNING] Error of executing code
+2023-08-30 19:46:07 [INFO] Question: Oggi è il 01/01/2023. I concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:46:07 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:46:07 [INFO] Prompt ID: 7c1e13d9-affd-44e2-aa41-69cdd3de3aed
+2023-08-30 19:46:07 [INFO] Using cached response
+2023-08-30 19:46:07 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+from datetime import datetime
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and the specified job
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = "operaio mautentore di macchine operatrici complesse"
+    filtered_df = dfs[0][(dfs[0]['OGGETTO'].str.contains(job, case=False)) & (dfs[0]['DATA_SCADENZA'] > today)]
+    
+    # Check if any results are found
+    if filtered_df.empty:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per "+job+" oggi."}
+    else:
+        return {"type": "dataframe", "value": filtered_df}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:46:07 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:46:07 [WARNING] Error of executing code
+2023-08-30 19:46:07 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:46:07 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:46:27 [INFO] Question: Oggi è il 01/01/2023. I concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:46:27 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:46:27 [INFO] Prompt ID: 4d67cf23-f2d0-4013-b978-f7fb40e98e29
+2023-08-30 19:46:27 [INFO] Using cached response
+2023-08-30 19:46:27 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+from datetime import datetime
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframe based on the current date and the specified job
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = "operaio mautentore di macchine operatrici complesse"
+    filtered_df = dfs[0][(dfs[0]['OGGETTO'].str.contains(job, case=False)) & (dfs[0]['DATA_SCADENZA'] > today)]
+    
+    # Check if any results are found
+    if filtered_df.empty:
+        return {"type": "text", "value": "Non ci sono concorsi aperti per "+job+" oggi."}
+    else:
+        return {"type": "dataframe", "value": filtered_df}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 19:46:27 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 19:46:27 [WARNING] Error of executing code
+2023-08-30 19:46:27 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-08-30 19:46:27 [INFO] Failed with error: '__import__'. Retrying
+2023-08-30 19:46:31 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    today = datetime.today().strftime('%d/%m/%Y')
+    job = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = dfs[0][dfs[0]['OGGETTO'].str.contains(job, case=False) & (dfs[0]['DATA_SCADENZA'] > today)]
+    if filtered_df.empty:
+        return {'type': 'text', 'value': 'Non ci sono concorsi aperti per ' + job + ' oggi.'}
+    else:
+        return {'type': 'dataframe', 'value': filtered_df}
+        ```
+2023-08-30 19:46:31 [WARNING] Error of executing code
+2023-08-30 19:46:31 [WARNING] Error of executing code
+2023-08-30 19:46:31 [WARNING] Failed to execute code with a correction framework [retry number: 2]
+2023-08-30 19:46:31 [INFO] Failed with error: module 'datetime' has no attribute 'today'. Retrying
+2023-08-30 19:47:04 [INFO] Question: Ci sono i concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:47:04 [INFO] Running PandasAI with langchain_openai LLM...
+2023-08-30 19:47:04 [INFO] Prompt ID: 0ee55f6b-bf99-4c94-b425-b0a04895b9d0
+2023-08-30 19:47:08 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+   # Code goes here (do not add comments)
+    df = dfs[0]
+    df_filtered = df[df['OGGETTO'].str.contains('OPERAIO')]
+                    ```
+                
+2023-08-30 19:47:08 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    df_filtered = df[df['OGGETTO'].str.contains('OPERAIO')]
+        ```
+2023-08-30 19:47:08 [INFO] Executed in: 4.025057077407837s
+2023-08-30 19:47:20 [INFO] Question: Ci sono i concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 19:47:20 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 19:47:20 [INFO] Prompt ID: 4a35eb19-144f-4b95-9fd5-2bafc2f0a320
+2023-08-30 19:47:20 [INFO] Using cached response
+2023-08-30 19:47:20 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+   # Code goes here (do not add comments)
+    df = dfs[0]
+    df_filtered = df[df['OGGETTO'].str.contains('OPERAIO')]
+                    ```
+                
+2023-08-30 19:47:20 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    df = dfs[0]
+    df_filtered = df[df['OGGETTO'].str.contains('OPERAIO')]
+        ```
+2023-08-30 19:47:20 [INFO] Executed in: 0.0028269290924072266s
+2023-08-30 20:15:24 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 20:15:24 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 20:15:24 [INFO] Prompt ID: 84ed899f-3079-4152-a142-68f6a81836ab
+2023-08-30 20:19:37 [INFO] Question: Quale dataset potrebbe rispondere alla domanda: Ci sono ancora dei concorsi aperti per operaio mautentore di macchine operatrici complesse?
+2023-08-30 20:19:37 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 20:19:37 [INFO] Prompt ID: e32ae6c1-4403-4ef4-83f7-9367ba2be825
+2023-08-30 20:19:51 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataset based on the provided question
+    keyword = "operaio mautentore di macchine operatrici complesse"
+    filtered_df = pd.DataFrame()
+    for df in dfs:
+        if keyword in df.columns or keyword in df.values:
+            filtered_df = df
+            break
+    
+    # Prepare the result
+    result = {}
+    if not filtered_df.empty:
+        result = {"type": "dataframe", "value": filtered_df}
+    else:
+        result = {"type": "text", "value": "No dataset found that can answer the question."}
+    
+    return result
+    
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 20:19:51 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    keyword = 'operaio mautentore di macchine operatrici complesse'
+    filtered_df = pd.DataFrame()
+    for df in dfs:
+        if keyword in df.columns or keyword in df.values:
+            filtered_df = df
+            break
+    result = {}
+    if not filtered_df.empty:
+        result = {'type': 'dataframe', 'value': filtered_df}
+    else:
+        result = {'type': 'text', 'value': 'No dataset found that can answer the question.'}
+    return result
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 20:19:51 [INFO] Answer: {'type': 'text', 'value': 'No dataset found that can answer the question.'}
+2023-08-30 20:19:51 [INFO] Executed in: 13.33381199836731s
+2023-08-30 20:21:43 [INFO] Question: Quale file probabilmente risponderà alladomanda: Ci sono ancora i concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 20:21:43 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 20:21:43 [INFO] Prompt ID: 88e8b02e-cd1d-4985-8861-5ade92c6f9a3
+2023-08-30 20:21:55 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    # Filter the dataframes to find the one that potentially answers the question
+    filtered_df = None
+    for df in dfs:
+        if "concorso" in df.columns and "operaio" in df.columns and "mautentore" in df.columns and "macchine operatrici complesse" in df.columns:
+            filtered_df = df
+            break
+    
+    # Process the filtered dataframe if found
+    if filtered_df is not None:
+        # 3. Analyze: Conducting the actual analysis
+        # ... Perform the necessary analysis on the filtered_df ...
+        # ... Save charts to exports/charts/temp_chart.png if needed ...
+        
+        # Return the result as needed
+        return {"type": "dataframe", "value": filtered_df}
+    
+    # If no matching dataframe is found, return an appropriate message
+    return {"type": "text", "value": "No dataframe contains the information to answer the question."}
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 20:21:55 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = None
+    for df in dfs:
+        if 'concorso' in df.columns and 'operaio' in df.columns and 'mautentore' in df.columns and 'macchine operatrici complesse' in df.columns:
+            filtered_df = df
+            break
+    if filtered_df is not None:
+        return {'type': 'dataframe', 'value': filtered_df}
+    return {'type': 'text', 'value': 'No dataframe contains the information to answer the question.'}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 20:21:55 [INFO] Answer: {'type': 'text', 'value': 'No dataframe contains the information to answer the question.'}
+2023-08-30 20:21:55 [INFO] Executed in: 12.773610830307007s
+2023-08-30 20:22:30 [INFO] Question: Quale file probabilmente risponderà alla domanda: Ci sono ancora i concorsi per operaio mautentore di macchine operatrici complesse?
+2023-08-30 20:22:30 [INFO] Running PandasAI with langchain_openai-chat LLM...
+2023-08-30 20:22:30 [INFO] Prompt ID: 10722747-535c-46a3-8af0-b8ee9e0a71cc
+2023-08-30 20:22:40 [INFO] 
+                    Code generated:
+                    ```
+                    # TODO import all the dependencies required
+import pandas as pd
+
+# Analyze the data
+# 1. Prepare: Preprocessing and cleaning data if necessary
+# 2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+# 3. Analyze: Conducting the actual analysis (if the user asks to create a chart save it to an image in exports/charts/temp_chart.png and do not show the chart.)
+# 4. Output: return a dictionary of:
+# - type (possible values "text", "number", "dataframe", "plot")
+# - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+# Example output: { "type": "text", "value": "The average loan amount is $15,000." }
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+   # Filter the dataframe based on the query
+   filtered_df = dfs[0].loc[dfs[0]['Temi del dataset'].str.contains(r'\bconcorso\b', case=False) & 
+                            dfs[0]['Temi del dataset'].str.contains(r'\boperaio\b', case=False) &
+                            dfs[0]['Temi del dataset'].str.contains(r'\bmanutentore di macchine operatrici complesse\b', case=False)]
+    
+   # Check if the filtered dataframe is empty
+   if len(filtered_df) == 0:
+       return {"type": "text", "value": "No file contains information about concorsi per operaio mautentore di macchine operatrici complesse."}
+   
+   # Return the filtered dataframe
+   return {"type": "dataframe", "value": filtered_df}
+
+
+# Declare a result variable
+result = analyze_data(dfs)
+                    ```
+                
+2023-08-30 20:22:40 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    filtered_df = dfs[0].loc[dfs[0]['Temi del dataset'].str.contains('\\bconcorso\\b', case=False) & dfs[0]['Temi del dataset'].str.contains('\\boperaio\\b', case=False) & dfs[0]['Temi del dataset'].str.contains('\\bmanutentore di macchine operatrici complesse\\b', case=False)]
+    if len(filtered_df) == 0:
+        return {'type': 'text', 'value': 'No file contains information about concorsi per operaio mautentore di macchine operatrici complesse.'}
+    return {'type': 'dataframe', 'value': filtered_df}
+
+
+result = analyze_data(dfs)
+        ```
+2023-08-30 20:22:40 [INFO] Answer: {'type': 'text', 'value': 'No file contains information about concorsi per operaio mautentore di macchine operatrici complesse.'}
+2023-08-30 20:22:40 [INFO] Executed in: 10.667245864868164s

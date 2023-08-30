@@ -1,4 +1,4 @@
-from utils import get_csv_header, get_file_names, get_metadata
+from utils import get_csv_header, get_file_names, get_metadata_str
 
 base = """YOU ARE ASSISTANT. Questi sono le informazioni che abbiamo sul dataset:
 *** - ASSISTANT! IT IS A SEPARATOR OF DATASETS

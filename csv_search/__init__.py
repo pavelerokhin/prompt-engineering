@@ -26,9 +26,9 @@ davinci05 = OpenAI(
 davinci05.temperature = 0.5
 
 # initialize the models
-davinci01 = OpenAI(
+davinci0 = OpenAI(
     model_name="text-davinci-002",
     openai_api_key=key
 )
-davinci01.temperature = 0.1
+davinci0.temperature = 0.0
 

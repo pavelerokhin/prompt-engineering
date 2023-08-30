@@ -1,6 +1,6 @@
 import time
 
-from csv_search import openai, davinci1, davinci05, davinci01
+from csv_search import openai, davinci1, davinci05, davinci0
 from utils import *
 
 # prepare prompt, we inject a list of metadata into the prompt as context
@@ -94,7 +94,7 @@ if __name__ == '__main__':
         answerDaVinci01 = "*"
         while not (answerDaVinci01.isnumeric()):
             print("DaVinci01")
-            answerDaVinci01 = davinci01(prompt_ + question)
+            answerDaVinci01 = davinci0(prompt_ + question)
             answerDaVinci01 = answerDaVinci01.replace("\n", "").replace("\t", "").replace(" ", "")
             estimate_one_answer(answerDaVinci01)
 

@@ -1,4 +1,4 @@
-from csv_search import openai, davinci1, davinci05, davinci01
+from csv_search import openai, davinci1, davinci05, davinci0
 from search import prepare_prompt
 from utils import get_file_names
 
@@ -55,8 +55,8 @@ if __name__ == '__main__':
     answer = davinci05(prompt + question)
     print(answer)
 
-    # get answer on davinci01
+    # get answer on davinci0
     print("Risposta corretta: ", correct_response)
-    print("davinci01")
-    answer = davinci01(prompt + question)
+    print("davinci0")
+    answer = davinci0(prompt + question)
     print(answer)

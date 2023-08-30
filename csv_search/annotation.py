@@ -1,8 +1,8 @@
 import json
 import time
 
-from csv_search import openai, davinci1, davinci05, davinci01
-from utils import get_file_names, get_csv_header, get_metadata
+from csv_search import openai, davinci1, davinci05, davinci0
+from utils import get_file_names, get_csv_header, get_metadata_str
 
 
 annotation_prompt = """
@@ -19,7 +19,7 @@ def annotate(file_names):
     for file_name in file_names:
         print(file_name)
         header = get_csv_header(file_name)
-        metadata = get_metadata(file_name)
+        metadata = get_metadata_str(file_name)
         prompt = annotation_prompt.format(metadata=metadata, csv_header=header)
 
         annotation = openai(prompt)
@@ -48,4 +48,4 @@ if __name__ == "__main__":
     print(openai(p), "\n\n\n")
     print(davinci1(p), "\n\n\n")
     print(davinci05(p), "\n\n\n")
-    print(davinci01(p))
+    print(davinci0(p))

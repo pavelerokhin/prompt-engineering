@@ -104,6 +104,13 @@ def get_metadata(file_name):
     file = './output/' + file_name + '.json'
     with open(file, 'r') as f:
         j = json.loads(f.read())
+        return j
+
+
+def get_metadata_str(file_name):
+    file = './output/' + file_name + '.json'
+    with open(file, 'r') as f:
+        j = json.loads(f.read())
     topics = j.get("metadata").get("Temi del dataset")
     geo = j.get("metadata").get("Copertura geografica")
     auth = j.get("metadata").get("Titolare")

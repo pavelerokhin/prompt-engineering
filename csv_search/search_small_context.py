@@ -1,6 +1,6 @@
 import time
 
-from csv_search import openai, davinci1, davinci05, davinci01
+from csv_search import openai, davinci1, davinci05, davinci0
 from utils import *
 
 # prepare prompt, we inject a list of metadata into the prompt as context
@@ -41,7 +41,7 @@ def prepare_prompt_context(file_names: list):
     data = ""
     for i, file_name in enumerate(file_names):
         csv_header = get_csv_header(file_name)
-        metadata = get_metadata(file_name)
+        metadata = get_metadata_str(file_name)
 
         data += data_prompt.format(i=i, metadata=metadata, csv_header=csv_header)
 
@@ -103,7 +103,7 @@ if __name__ == '__main__':
         #
         # answerDaVinci01 = "*"
         # while not (answerDaVinci01.isnumeric() or answerDaVinci01 == "-1"):
-        #     answerDaVinci01 = davinci01(prompt + question)
+        #     answerDaVinci01 = davinci0(prompt + question)
         #     answerDaVinci01 = answerDaVinci01.replace("\n", "").replace("\t", "").replace(" ", "")
         #     if answerDaVinci01.isnumeric():
         #         x = int(answerDaVinci01) + i * n

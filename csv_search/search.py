@@ -1,5 +1,5 @@
-from csv_search import openai, davinci1, davinci05, davinci01
-from utils import get_csv_header, get_file_names, get_metadata
+from csv_search import openai, davinci1, davinci05, davinci0
+from utils import get_csv_header, get_file_names, get_metadata_str
 
 base = """Questi sono le informazioni che abbiamo sul dataset:
 {data}
@@ -28,7 +28,7 @@ def prepare_prompt(file_names: list):
     data = ""
     for i, file_name in enumerate(file_names):
         csv_header = get_csv_header(file_name)
-        metadata = get_metadata(file_name)
+        metadata = get_metadata_str(file_name)
 
         data += data_prompt.format(i=i, metadata=metadata, csv_header=csv_header)
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     answer = davinci05(prompt + question)
     print(answer)
 
-    # get answer on davinci01
-    print("davinci01")
-    answer = davinci01(prompt + question)
+    # get answer on davinci0
+    print("davinci0")
+    answer = davinci0(prompt + question)
     print(answer)
